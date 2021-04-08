@@ -1,0 +1,12 @@
+.ipynb_checkpoints/
+.spyproject
+
+__pycache__
+
+.pyc
+
+/dist/
+/build/
+/develop/
+
+/*.egg-info
