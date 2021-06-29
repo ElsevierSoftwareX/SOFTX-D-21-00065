@@ -121,9 +121,9 @@ def _create_encoding_indicator(csvfile):
         
         dict_country = {}
         for x in data_country.columns:
-            if x.isnumeric():
+            try:
                 dict_country[float(x)] = data_country.loc[:,x].values[0]
-            else:
+            except:
                 dict_country[x] = data_country.loc[:,x].values[0]
                  
         encoding_dictionary_indicator[country] = dict_country
